@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 1</title>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+
+  <style>
+  .container{
+    /* Step 1: Set display to grid */
+      display: grid;
+   /* Step 2: setup rows amd columns */
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 250px 1400px 100px;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main sd sd sd "
+      "ft ft ft ft ft ft ft ft";
+      border: 2px solid yellow;
+      background-color: white;
+      padding: 40px;
+      grid-row-gap: 20px;
+  }
+      
+  .box{
+      border: 1px solid white;
+      background: #F8FA90;
+   }
+      
+  .header{
+      grid-area: hd; 
+      height: 80px;
+      padding: 80px;
+      border-bottom: 2px solid #e0e0e0;
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+      color: #657482;
+    }
+
+  .footer{
+      grid-area: ft;         
+   }
+           
+  .sidebar{
+      grid-area: sd;  
+      padding-right: 300px;
+   }     
+      
+  .content{
+      grid-area: main;
+      max-width: 700px;
+      padding-left: 80px;
+      padding-right: 80px;
+      font-family: Roboto, sans-serif;  
+      line-height: 200%;
+   }       
+
+  img{
+    width: 40%;
+    height: auto;   
+    padding-bottom: 15px;
+      } 
+        
+@media (min-width: 767px) {
+  .container .blog-post {
+        width: 968px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        margin-bottom: 3rem;
+    }      
+      
+  </style>
+  </head>
+
+<body>
+  <div class = "container">
+    <div class="header box"> 
+        <img src="GDG-logo-color.svg" alt="GDG-Warsaw">
+        <h4 id="GDG">Blog of our latest news, updates, and stories for developers</h4>
+    </div>
+      
+      
+    <div class="content box">
+        <article class="post" id="first_post">
+            <header class="post_header">
+                <h3 class="post_title">
+                    <a href="Blog/Posts/blogpost.html">How to Speed up the Code Review</a>
+                </h3>
+                <h4 class="post_date">
+                    <a>Saturday, December 12, 2020</a>
+                </h4>
+                <h4 class="post_author">
+                    <a>Posted by Ania Jezierska, GDG Warsaw co-organizer</a>
+                </h4>
+            </header>
+            
+            
+            <section class="post_image">
+                <img src="IMG_7855.png" alt="Code Review">
+            </section>        
+        <div class="post-data">
+            <p>How to make the process of code review easier and faster? 
+                    Why some pull requests are harder to review than the others? 
+                    Is the problem only in the number of lines or there is something else? 
+                    We will try to figure it out.
+            </p> 
+        <button class="continue-reading"><a href="Home/Posts/blogpost.html">Continue reading</a></button>
+        <hr>   
+            <header class="post_header">
+                <h3 class="post_title">
+                    <a href="Blog/Posts/blogpost.html">Micro Frontends apps with Angular</a>
+                </h3> 
+                <h4 class="post_date">
+                    <a>Tuesday, December 1, 2020</a>
+                </h4>
+                <h4 class="post_author">
+                    <a>Posted by Ania Jezierska, GDG Warsaw co-organizer</a>
+                </h4>
+                
+            </header>
+            <section class="post_image">
+                <img src="images/undraw_code_thinking_1jeh (1).svg" alt="Code Review">
+            </section>          
+        <div class="post-data">    
+            <p>Are you working with large frontend application using Angular and you are facing some problems in your project? 
+                Do you want to improve the architecture in your codebase and don’t know how? 
+                Don't you know how to manage different layers of complexity in your application or share these components between applications? 
+                How to solve the routing problems on Client-side and Server-side? How to decouple pages and use independent builds? 
+            </p> 
+        <hr>    
+            <header class="post_header">
+                <h3 class="post_title">
+                    <a href="Blog/Posts/blogpost.html">Programmable API manager</a>
+                </h3>
+                <h4 class="post_date">
+                    <a>Friday, November 20, 2020</a>
+                </h4>
+                <h4 class="post_author">
+                    <a>Posted by Ania Jezierska, GDG Warsaw co-organizer</a>
+                </h4>
+            </header>
+            <section class="post_image">
+                <img src="images/undraw_code_thinking_1jeh (1).svg" alt="Code Review">
+            </section>          
+        <div class="post-data">    
+            <p>Apigee Edge lets you develop and manage APIs, benefitting from the power of GCP in terms of security, 
+                scalability, analytics and more. 
+                During the talk we will briefly introduce the idea of an API manager and explain its usefulness, 
+                and explore capabilities offered by Apigee, with emphasis on policies. 
+                Everything will be demonstrated on a live app that we have developed.
+            </p> 
+        <hr>             
+        </div>  
+        </article> 
+
+
+        
+     </div>    
+      
+      
+      
+    <div class="sidebar box"> Box3 </div> 
+      
+    <div class="footer box"> Footer</div>
+  </div>
+</body>
+</html>
