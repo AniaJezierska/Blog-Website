@@ -1,87 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Blog Home Page</title>  
-    <meta charset="UTF-8">  
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" href="main.css">        
-    <link href="https://fonts.googleapis.com/css?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
-</head>  
-<body>
-    <div class="main-content">  
-        <header class="organization_name">     
-            <img src="/images/GDG-logo-color.svg" alt="GDG-Warsaw">
-            <h4 id="GDG">Blog of our latest news, updates, and stories for developers</h4>
-            <hr>
-        </header>
-       <!-- Dotąd OK. -->
+<html>
 
-        <div class="container">
-            <main class="container-content">
-                <article class="post" id="first_post">
-                    <header class="post_header">
-                        <h3 class="post_title">
-                            <a href="Blog/Posts/blogpost.html">How to Speed up the Code Review</a>
-                        </h3>
-                    </header>
-                    <section class="post_image">
-                        <img src="images/undraw_code_thinking_1jeh (1).svg" alt="Code Review">
-                    </section>
-                    <div class="post-data">
-                        <p>How to make the process of code review easier and faster? 
-                          Why some pull requests are harder to review than the others? 
-                          Is the problem only in the number of lines or there is something else? 
-                          We will try to figure it out.
-                        </p>
-                        <button class="continue-reading"><a href="Blog/Posts/blogpost.html">Continue reading</a></button>
-                    </div>
-                </article>
+<head>
+    <title>Blog Home Page</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class = "container">
+    <div class="header box"> 
+        <img src="GDG-logo-color.svg" alt="GDG-Warsaw">
+        <h5 id="GDG">Blog of our latest news, updates, and stories for developers</h5>
+    </div>
+      
+      
+    <div class="content box">
+        <article class="post" id="first_post">
+            <header class="post_header">
+                <h3 class="post_title">
+                    <a href="Blog/Posts/blogpost.html">How to Speed up the Code Review</a>
+                </h3>
+                <h4 class="post_date">
+                    <a>Saturday, December 12, 2020</a>
+                </h4>
+                <h4 class="post_author">
+                    <a>Posted by Ania Jezierska, GDG Warsaw co-organizer</a>
+                </h4>
+            </header>          
+            <section class="post_image">
+                <img src="photo_1.jpg" alt="Code Review">
+            </section>        
+            <div class="post-data">
+                <p>How to make the process of code review easier and faster? 
+                        Why some pull requests are harder to review than the others? 
+                        Is the problem only in the number of lines or there is something else? 
+                        We will try to figure it out.
+                </p> 
+                <button class="continue-reading"><a href="Home/Posts/blogpost.html">Continue reading</a></button>
+                <hr> 
+            </div>      
+        </article>    
+            
+        <article class="post" id="second_post">            
+            <header class="post_header">
+                <h3 class="post_title">
+                    <a href="Blog/Posts/blogpost2.html">Micro Frontends apps with Angular</a>
+                </h3> 
+                <h4 class="post_date">
+                    <a>Tuesday, December 1, 2020</a>
+                </h4>
+                <h4 class="post_author">
+                    <a>Posted by Ania Jezierska, GDG Warsaw co-organizer</a>
+                </h4>           
+            </header>
+            <section class="post_image">
+                <img src="photo_2.jpg" alt="Angular">
+            </section>          
+            <div class="post-data">    
+                <p>Are you working with large frontend application using Angular and you are facing some problems in your project? 
+                    Do you want to improve the architecture in your codebase and don’t know how? 
+                    Don't you know how to manage different layers of complexity in your application or share these components between applications? 
+                    How to solve the routing problems on Client-side and Server-side? How to decouple pages and use independent builds? 
+                </p> 
+                <button class="continue-reading"><a href="Home/Posts/blogpost2.html">Continue reading</a></button>            
+                <hr>  
+            </div>  
+        </article>            
+   
+        <article class="post" id="_post">            
+            <header class="post_header">
+                <h3 class="post_title">
+                    <a href="Blog/Posts/blogpost3.html">Programmable API manager</a>
+                </h3>
+                <h4 class="post_date">
+                    <a>Friday, November 20, 2020</a>
+                </h4>
+                <h4 class="post_author">
+                    <a>Posted by Ania Jezierska, GDG Warsaw co-organizer</a>
+                </h4>
+            </header>
+            <section class="post_image">
+                <img src="photo_3" alt="API">
+            </section>          
+            <div class="post-data">    
+                <p>Apigee Edge lets you develop and manage APIs, benefitting from the power of GCP in terms of security, 
+                    scalability, analytics and more. 
+                    During the talk we will briefly introduce the idea of an API manager and explain its usefulness, 
+                    and explore capabilities offered by Apigee, with emphasis on policies. 
+                    Everything will be demonstrated on a live app that we have developed.
+                </p> 
+                <button class="continue-reading"><a href="Home/Posts/blogpost3.html">Continue reading</a></button>            
+                <hr>             
+            </div>  
+        </article>      
+    </div>    
+           
+    <div class="sidebar box"> 
+        <div class=section id="sidebar-top">
+                <div class="searchBox">
+                    <input type="text" title="Search This Blog" placeholder="Search blog..." >
                 <hr>
-                         <!-- DRUGI POST-->            
-                <article class="post" id="second_post">
-                    <header class="post_header">
-                        <h3 class="post_title">
-                            <a href="pages/blog_post.html">Micro Frontends apps with Angular</a>
-                        </h3>
-                    </header>
-                    <section class="post_image">
-                         <!-- Tu wstawić własne zdjęcie -->
-                        <img src="/Assets/Images/undraw_code_thinking_1jeh (1).svg" alt="Angular">
-                    </section>
-                    <div class="post-data">
-                        <p>Are you working with large frontend application using Angular and you are facing some problems in your project? 
-                          Do you want to improve the architecture in your codebase and don’t know how? 
-                          Don't you know how to manage different layers of complexity in your application or share these components between applications? 
-                          How to solve the routing problems on Client-side and Server-side? How to decouple pages and use independent builds? 
-                        </p>
-                        <button class="continue-reading"><a href="pages/blog_post.html">Continue reading</a></button>
-                    </div>
-                </article>
-                <hr>    
-                         <!-- TRZECI POST-->            
-                <article class="post" id="third_post">
-                    <header class="post_header">
-                        <h3 class="post_title">
-                            <a href="pages/blog_post.html">Programmable API manager</a>
-                        </h3>
-                    </header>
-                    <section class="post_image">
-                         <!-- Tu wstawić własne zdjęcie -->
-                        <img src="/Assets/Images/undraw_code_thinking_1jeh (1).svg" alt="API mamager">
-                    </section>
-                    <div class="post-data">
-                        <p>Apigee Edge lets you develop and manage APIs, benefitting from the power of GCP in terms of security, 
-                          scalability, analytics and more. 
-                          During the talk we will briefly introduce the idea of an API manager and explain its usefulness, 
-                          and explore capabilities offered by Apigee, with emphasis on policies. 
-                          Everything will be demonstrated on a live app that we have developed.
-                        </p>
-                        <button class="continue-reading"><a href="pages/blog_post.html">Continue reading</a></button>
-                    </div>
-                    </article> 
-                    <hr>     
-            </main>   
+                </div> 
         </div>           
-    </div>                     
+        <div class="section" id="sidebar-middel1">
+            <div class="label">
+               <span class="material-icons">label</span>
+	           <a data-toggle="modal" data-target="#modal" href="#">Labels</a>
+               <button class="drop"><a href="labelsList">
+                   <span class="material-icons">arrow_drop_down</span></a>
+               </button>
+               <hr>
+            </div>              
+        </div>         
+        <div class="section" id="sidebar-middel2">
+            <div class="archive">
+               <span class="material-icons">folder</span>
+	           <a data-toggle="modal" data-target="#modal" href="#">Archive</a>
+               <button class="drop"><a href="labelsList">
+                   <span class="material-icons">arrow_drop_down</span></a>
+               </button>    
+               <hr>
+            </div>              
+        </div>             
+        <div class="section" id="sidebar-bottom">
+            <div class="subscribe">
+               <span class="material-icons">cast</span>
+                <a data-toggle="modal" data-target="#modal" href="#">Subscribe</a>       
+            </div>              
+        </div>      
+    </div>        
+      
+    <div class="footer box">    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <button class="home"><a href="Home/Posts/blogpost.html">
+                <span class="material-icons">home</span></a>
+            </button> 
+            <button class="arrow-west"><a href="Home/Posts/blogpost.html">
+                <span class="material-icons">west</span></a>
+            </button>
+            <button class="arrow-east"><a href="Home/Posts/blogpost.html">
+                <span class="material-icons">east</span></a>
+    </div>            
+  </div>            
 </body>
-</html>  
+</html>
