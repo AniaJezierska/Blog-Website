@@ -1,7 +1,0 @@
-@import "./Styling/bloghomepage.css";
-@import "/Styling/blogpost.css";
-@import "/Styling/about.css";
-
-html {
-    font-family: 'Roboto', sans-serif;
-} 
