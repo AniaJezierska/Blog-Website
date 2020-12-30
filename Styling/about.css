@@ -1,0 +1,14 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+a {
+     text-decoration: none;
+}
+
+p {
+     max-width: 700px;
+}
