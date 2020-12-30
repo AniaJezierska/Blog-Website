@@ -61,6 +61,10 @@
     margin-bottom: -20px;
     color: solid #e0e0e0;
 } 
+
+.nav-bar{
+    padding-left: 60px;  
+}
     
 h5{
     font-size: 14px;
